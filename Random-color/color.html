@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        height: 100px;
+        width: 200px;
+        color: white;
+        background-color: blueviolet;
+        border-radius: 10px;
+        font-size: xx-large;
+        font-weight: 600;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <button>Color</button>
+    <h1 style="background-color: #d4941d">Hello welcom</h1>
+</body>
+<script>
+    const back=document.querySelector('body');
+    const button=document.querySelector('button');
+    function color() {
+    var first='123456789abcdefghijklmnopqrstuvwxyz';
+    var color='#';
+    for (let i = 0; i < 6; i++) {
+    color+=first[Math.floor(Math.random()*16)];    
+    }
+    back.style.backgroundColor=`${color}`;
+    button.innerHTML=`${color}`;
+}
+button.addEventListener('click',color);
+    // setInterval(() => {
+    //     // button.addEventListener('click',color);
+    //     color();
+    // }, 500);
+
+    console.log(color);
+</script>
+</html>

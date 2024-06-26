@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 4rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    h1>span{
+        color: brown;
+    }
+    button{
+        background-color: teal;
+        color: white;
+        padding: .5rem 1rem;
+        border: 0;
+        cursor: pointer;
+        box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.3);
+    }
+    button:hover{
+        background-color: darkslateblue;
+    }
+</style>
+<body>
+    <h1>Hello And Welcome to My Website: <span>World!</span></h1>
+    <button>Say Hi</button>
+</body>
+<script>
+    const text=document.querySelector('span');
+    const button=addEventListener('click',function () {
+        const text1=prompt("Enter Your Name")
+        text.textContent=text1;  
+    })
+</script>
+</html>

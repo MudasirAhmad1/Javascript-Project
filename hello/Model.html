@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 4rem;
+        background-image: url(/House.jpg);
+        background-size: cover;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    h1>span{
+        color: brown;
+    }
+    button{
+        background-color: teal;
+        color: white;
+        padding: .5rem 1rem;
+        border: 0;
+        cursor: pointer;
+        box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.3);
+    }
+    button:hover{
+        background-color: darkslateblue;
+    }
+    text-box {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.text-box {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    display: none;
+}
+
+.text-box p {
+    margin: 0;
+    color: #333;
+}
+
+</style>
+<body>
+    <button id="openmodel">Open Model</button>
+    <div class="model">
+        <div class="model_overlay"></div>
+        <div class="text-box">
+            <h1>Hello World</h1>
+            <p>Welcome to My website I hope Your Enjoying The Website</p>
+        </div>
+    </div>
+</body>
+<script>
+    const button=document.querySelector('button');
+    const textbox=document.querySelector('.text-box')
+    button.addEventListener('click',function () {
+        textbox.style.display='list-item';
+    })
+    textbox.addEventListener('click',function () {
+        textbox.style.display='none';
+    })
+</script>
+</html>

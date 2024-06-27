@@ -18,6 +18,7 @@
         text-align: center;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 </style>
 <body>
@@ -28,7 +29,7 @@
     const back=document.querySelector('body');
     const button=document.querySelector('button');
     function color() {
-    var first='123456789abcdefghijklmnopqrstuvwxyz';
+    var first='0123456789ABCDEF';
     var color='#';
     for (let i = 0; i < 6; i++) {
     color+=first[Math.floor(Math.random()*16)];    

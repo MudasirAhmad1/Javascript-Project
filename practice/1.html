@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <style>
+        .mu,.mud{
+           height: 200px;
+           width: 200px;
+           border: solid;
+           text-align: center;
+           display: inline-block;
+           margin-top: 200px;
+           border-radius: 45px;
+           text-transform: none;
+        }
+        #grey,#grey1{
+            background-color: grey;
+
+        }
+        #green,#green1{
+            background-color: green;
+            
+        }#red,#red1{
+            background-color: red;
+            
+        }
+        *{
+            text-align: center;
+        }
+</style>
+</head>
+<body>
+    <h1>Welcome to javascript Project </h1>
+    <div class="mu" id="grey"> Welcome </div>
+    <div class="mu" id="green"> Welcome </div>
+    <div class="mu" id="red"> Welcome </div>
+
+    <div class="mud" id="grey1"> Welcome </div>
+    <div class="mud" id="green1"> Welcome </div>
+    <div class="mud" id="red1"> Welcome </div>
+
+
+</body>
+<script>
+    const name=document.querySelectorAll('.mu')
+    const body=document.querySelector('body')
+    const body1=document.querySelectorAll('.mud')
+    
+    name.forEach(function (mudasir) {
+        mudasir.addEventListener('click',function (e) {
+           console.log(e.target.id); 
+           if (e.target.id==="grey") {
+            body.style.backgroundColor=e.target.id;
+           }
+           if (e.target.id==="red") {
+            body.style.backgroundColor=e.target.id;
+           }if (e.target.id==="green") {
+            body.style.backgroundColor=e.target.id;
+           }
+        })
+    })
+    
+</script>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAI OUR CODE </title>
+</head>
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+    <h1 class="heading"> Welcome to Javascript</h1>
+</body>
+<script>
+    function addlanaguage(langName) {
+        const li =document.createElement('li')
+        li.innerHTML=`${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addlanaguage("python")
+    addlanaguage("Java")
+    addlanaguage("python")
+
+    function optlangauge(laanguagename) {
+        const li=document.createElement('li')
+        //const addtext =document.createTextNode(`${laanguagename}`)
+        li.appendChild(document.createTextNode(`${laanguagename}`))
+        document.querySelector('.language').appendChild(li)
+
+    } 
+    optlangauge('mudasir')
+
+
+    /*
+    function addheading(head) {
+        const h1=document.createElement('h1')
+        h1.innerHTML=`${head}`
+        document.querySelector(".heading").appendChild(h1)
+    }
+    addheading("Welcome to chai and code")
+
+    function h2(heading2) {
+        const h2=document.createElement('h2')
+        h2.innerHTML=`${heading2}`
+        //document.querySelector(".h2")appendChild(h2)
+    }
+    */
+
+
+
+
+
+
+
+
+
+// get the ul#menu
+const menu = document.querySelector('.language');
+// add menu item
+menu.appendChild(createMenuItem('Home'));
+menu.appendChild(createMenuItem('Services'));
+menu.appendChild(createMenuItem('About Us'));
+
+
+</script>
+</html>

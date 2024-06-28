@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+        }
+        ul {
+  list-style-type: none;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Amazing Images</h2>
+        <ul id="images">
+            <li id="tor"> <img src="images/1.jpg" alt="tortoise" onclick="alert('welcome')"></li>  // add onclick one way
+            <li id="tul"> <img src="images/2.jpg" alt="Tulips"></li>
+            <li id="bri"> <img src="images/3.jpg" alt="Bridge"></li>
+            <li id="fac"> <img src="images/4.jpg" alt="face"></li>
+        </ul>
+    </div>
+    
+</body>
+<script>
+    const tul= document.getElementById("tul")
+    // tul.onclick=function()
+    // {
+    //     alert('tulip')
+    // }
+
+    // add onclick in another way 
+    tul.addEventListener("click",function (e) {
+        
+            alert('tulip')
+        
+    })
+
+    /* add onclick another way ...
+</script>
+</html>

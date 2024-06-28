@@ -1,0 +1,54 @@
+html {
+    margin: 0;
+  }
+  
+  span {
+    display: block;
+  }
+  .canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  
+  #grey {
+    background: grey;
+  }
+  
+  #white {
+    background: white;
+  }
+  #blue {
+    background: blue;
+  }
+  #yellow {
+    background: yellow;
+  }
+  #red {
+    background:red;
+  }
+
+
+  .mud {
+    background-color: red;
+    padding: 15px;
+    border: solid black 2px;
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 10px;
+
+  }

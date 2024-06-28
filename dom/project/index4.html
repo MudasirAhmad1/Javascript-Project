@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body
+
+        {
+            text-align: center;
+            display: none;
+            height: 200px;
+            width: 200px;
+            
+        }
+
+        .change3
+        {
+            background-color: red;
+            padding: 15px;
+            margin: 20px;
+        }
+        .change2
+        {
+            background-color: blue;
+            padding: 15px;
+            margin: 20px;
+        }
+
+        .change1
+        {
+            background-color: blueviolet;
+            padding: 15px;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <h1 class="mu">Welcome to wwe we are here to help</h1>
+    <h1 class="mud">Welcome to wwe we are here to help</h1>
+    <h1 class="muda">Welcome to wwe we are here to help</h1> -->
+
+    <div class="parent">
+
+        <div class="day">Sunday Monday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">wednesday</div>
+
+    </div>
+
+    <ul>
+        <li>welcome</li>
+        <li>welcome</li>
+        <li>welcome</li>
+    </ul>
+
+    <div class="cl">
+        <div class="change1"> class</div>
+        <div class="change2"> class </div>
+        <div class="change3"> class </div>
+    </div>
+
+    
+</body>
+<script>
+    //REMOVE
+    const shug=document.querySelector(".change3")
+    shug.remove()
+    //EDIT
+    const aa=document.querySelector("li:nth-child(1)")
+    aa.innerHTML="Shuguftas"
+    //EDIT
+    const shu=document.querySelector("li:nth-child(2)")
+    const element= document.createElement("li")
+    element.className="mud"
+    element.appendChild(document.createTextNode("aabid"))
+    shu.replaceWith(element)
+
+
+
+    function create(name) {
+        
+    const li=document.createElement("li")
+    li.className="muzamil"
+    li.id="muzamil"
+    li.setAttribute("h1","Welcome")
+    //li.innerHTML="NewElement"
+    //li.innerText="New Element"
+    li.appendChild(document.createTextNode(`${name}`))
+    document.querySelector("li ").appendChild(li)
+    }
+    create(" Hello world")
+    create(" mudasir")
+
+
+    // const name=document.querySelectorAll("li")
+    
+    // name.forEach(function (li) {
+    //     li.style.backgroundColor="red"
+    // });
+
+    // // const name1=document.getElementsByClassName("mudasir")
+    // // const Mycovert=Array.from(name1)
+
+
+    // // const day = document.querySelectorAll(".parent")
+    // // day.forEach(function (d) {
+    // //     d.style.backgroundColor="green"
+    // // })
+
+    // const day = document.querySelector(".parent")
+    // // console.log(day);
+    // // console.log(day.children);
+    // // for (let i = 0; i < day.children.length; i++) {
+    // //     console.log(day.children[i].innerHTML); 
+    // // }
+    // day.children[1].innerHTML="welcome"
+    // day.firstElementChild.style.backgroundColor="green"
+
+    // day.nextElementSibling.style.backgroundColor="blue"
+    // day.lastElementChild.style.backgroundColor="yellow"
+    // // select parent element
+
+    // const parent=document.querySelector('.day')
+
+    // const div= document.createElement("div")
+    // div.className="mudasir"
+    // div.id="mudasir"
+    // div.setAttribute("title","generated title")
+    // //div.innerText="chai our code"
+    // div.innerHTML="chai aur code 2.0"
+    // //div.appendChild(document.createTextNode("Welcome to new div"))
+    // document.body.appendChild(div)
+
+    
+
+</script>
+</html>

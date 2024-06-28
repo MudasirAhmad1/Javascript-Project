@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CHAI OUR CODE</title>
+</head>
+<body>
+    <div class="parent">
+        // welcome
+        <div class="day">Monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">Thursday</div>
+
+
+    </div>
+</body>
+<script>
+    const name=document.querySelector('.parent')
+    console.log(name.children);
+    console.log(name.children[0].innerHTML);
+
+    for (let i = 0; i < name.children.length; i++) {
+        console.log(name.children[i].innerHTML);
+    }
+        name.children[0].style.color="red";
+        name.children[1].style.color="blue";
+        console.log(name.firstElementchild);
+
+        //if have to select first element u can use query selector to select ist element
+
+        const one=document.querySelector('.day')
+        console.log(one);
+        console.log(one.parentElement);
+        console.log(one.nextElementSibling);
+        console.log("nodes:",name.childNodes);
+        //output NodeList(9) [text, div.day, text, div.day, text, div.day, text, div.day, text]
+        // shows 9 4 for monday tuesday thursady friday..and spaces including linebreak thats why nine
+    
+
+</script>
+</html>

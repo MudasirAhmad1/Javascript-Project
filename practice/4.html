@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai and Code</title>
+</div>
+</head>
+<body>
+    <h1>Days in the week </h1>
+    <div class="parent">
+
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Thursday</div>
+    <div class="day">Friday</div>
+
+    <ul class="list">
+        <li class="list-item"> Java </li>
+        <li class="list-item"> Python </li>
+        <li class="list-item"> Jquery </li>
+    </ul>
+</body>
+<script>
+
+    // const li=document.createElement("li")
+    // li.className="list"
+
+    // li.appendChild(document.createTextNode("Angular"))
+
+    // document.querySelector(".list").appendChild(li)
+
+    // const lii=document.querySelector("li:nth-child(2)")
+    //edit first
+    const newli=document.querySelector("li:nth-child(2)");
+
+    const li=document.createElement("li")
+    li.className="list-item"
+
+    li.appendChild(document.createTextNode("google"))   
+
+    newli.replaceWith(li)
+
+    // Edit 
+
+    const newlii=document.querySelector("li:first-Child");
+    newlii.outerHTML="<li>WElcome</li>"
+    
+    //remove 
+
+    const lang=document.querySelector('li:last-Child')
+    lang.remove()
+
+
+
+
+
+
+/*
+    const parent=document.querySelector(".parent")
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[3].innerHTML);
+
+    for (let i = 0; i < parent.children.length; i++) {
+         console.log( parent.children[i].innerHTML);
+         if (parent.children[i].innerHTML==="Tuesday"){
+
+            //parent.children[3].style.backgroundColor="red"
+         }
+         else
+         parent.children[i].style.backgroundColor="green"
+    }
+    
+/*
+    const div=document.createElement("div")
+    div.className="day"
+    div.id="mu"
+    div.setAttribute("title","MY title")
+    //div.style.backgroundColor="green"
+    //div.style.padding="15px"
+
+    div.appendChild(document.createTextNode("Saturday"))
+
+    document.querySelector(".parent").appendChild(div)
+
+    */
+</script>
+</html>

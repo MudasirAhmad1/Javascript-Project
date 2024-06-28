@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manulation</title>
+</head>
+<body>
+    <h1>Welcome to manupliation of Dom </h1>
+
+
+</body>
+<script>
+    /*
+    const body=document.querySelector('body')
+    const div=document.createElement('div')
+    div.className="main"
+    //div.id="myid"
+    div.id=Math.round(Math.random()*10+1) 
+    console.log(div);
+    div.setAttribute("title","gernateated title")
+    console.log(div);
+    div.style.backgroundColor="blue"
+    div.innerText='Chai our code'
+    const addText=document.createTextNode("chai our code")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+
+    const h1=document.createElement('h1')
+    h1.className="h1"
+    h1.id="head"
+    h1.setAttribute("h1","generated h1")
+    h1.style.backgroundColor="green"
+    const text=document.createTextNode("helllow welcome ")
+    h1.appendChild(text)
+    body.appendChild(h1)
+    */
+
+    function shubu(name,text1) {
+        const h1=document.createElement(`${name}`)
+        const body=document.querySelector('body')
+    h1.className="h1"
+
+    h1.className=Math.round(Math.random()*10+1)
+    h1.id=Math.round(Math.random()*10+1)
+    h1.setAttribute("h1","generated h1")
+    h1.style.backgroundColor="green"
+    h1.style.borderRadius="15px"
+    const text=document.createTextNode(`${text1}`)
+    h1.appendChild(text)
+    body.appendChild(h1)
+    }
+
+    shubu("h1","welcome")
+    shubu("span","welcome to world of poosibilty with aircel")
+    shubu("div","welcome")
+    shubu("ul","welcome")
+</script>
+</html>

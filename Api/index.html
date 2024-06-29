@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card</title>
+    <style>
+        /* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.id-card {
+    width: 300px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.photo {
+    margin: 20px 0;
+}
+
+.photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.details {
+    padding: 0 20px;
+}
+
+.details h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="id-card">
+        <div class="header">
+            <h2 class="company">Company Name</h2>
+        </div>
+        <div class="photo">
+            <img src="https://avatars.githubusercontent.com/u/11613311?v=4" alt="Profile Photo">
+        </div>
+        <div class="details">
+            <h3 class="follow1">John Doe</h3>
+            <p class="idname">ID: 123456</p>
+            <p>Position: Software Engineer</p>
+        </div>
+        <div class="footer">
+            <p class="email">Contact: john.doe@example.com</p>
+        </div>
+    </div>
+</body>
+<script>
+    const follow=document.querySelector('.follow1');
+    const idname=document.querySelector('.idname');
+    const company=document.querySelector('.company');
+    const email=document.querySelector('.email');
+    console.log(follow,company,email);
+    const url='https://api.github.com/users/hiteshchoudhary';
+    const xhr= new XMLHttpRequest();
+    xhr.open('GET',url);
+    xhr.onreadystatechange=function () {
+        if (xhr.readyState==4) {
+            const data=JSON.parse(this.responseText);
+            console.log(data);
+            follow.innerHTML=data.name;
+            email.innerHTML=data.blog;
+            idname.innerHTML=data.id;
+            company.innerHTML=data.twitter_username;
+        }
+    }
+xhr.send();
+</script>
+</html>
